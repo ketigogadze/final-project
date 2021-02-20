@@ -23,12 +23,28 @@ ul{
     font-size: 20px;
     color: #021C33;
     transition-property: all;
-    transition-delay: 0.2s;
-    transition-duration: 0.4s;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
 }
-.navbar-li a:hover{
+.navbar-li-1 a{
+    margin-left: 50px;
+    font-family: 'poppinsbold';
+    font-weight: 500;
+    font-size: 20px;
+    color: #021C33;
+    text-decoration: underline;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+.navbar-li-1 a:hover{
+    color: #32558c;
     font-size: 21px;
-    font-weight: bold;
+}
+
+.navbar-li a:hover{
+    color: #32558c;
+    font-size: 21px;
 }
 .banner-conatainer{
     max-width: 1088px;
@@ -51,6 +67,7 @@ ul{
 .banner-info{
     max-width: 500px;
     width: 100%;
+    margin-left: 30px;
 }
 .banner-title{
     font-family: 'poppinsbold';
@@ -106,8 +123,8 @@ ul{
     margin-top: 15px;
 }
 .box-text{
-    width: 340px;
-    margin: 30px 0px 0px 0px;
+    width: 300px;
+    margin: 30px 0px 0px 20px;
     font-family: 'butlerregular';
     font-weight: lighter;
     font-size: 21px;
@@ -277,14 +294,14 @@ ul{
     margin-top: 60px;
 }
 .mail-title{
- margin: 30px 0 0 10px;
+ margin: 30px 0 0 30px;
  font-family: 'muktaregular';
  font-weight: bold;
  font-size: 33px;
  color: #707070;
 }
 .mail-text{
-    margin:40px 0 0 10px;
+    margin:40px 0 0 30px;
     font-family: 'exothin';
     font-size: 20px;
     font-weight: 700;
@@ -292,7 +309,7 @@ ul{
 .form-input{
     width: 352px;
     height: 54px;
-    margin:30px 0 0 10px;
+    margin:30px 0 0 30px;
     background-color: #FFFBEE;
     border: 2px solid #8872AD;
     font-family: 'muktaregular';
@@ -301,7 +318,7 @@ ul{
 button{
     width: 160px;
     height: 62px;
-    margin:20px 0 0 100px;
+    margin:20px 0 0 120px;
     background: none;
     background-color: #8872AD;
     color: #FFFBEE;
@@ -342,11 +359,211 @@ input:focus,button:focus{
 .socials{
     margin-top: 50px;
 }
+.icon{
+    margin: 10px 10px 0 0;
+}
 .contact{
     max-width: 1088px;
     width: 100%;
     margin: 0 auto;   
 }
+.contact::before{
+    content: "";
+    display:block;
+    width: 820px;
+    height: 1px;
+    background-color: #021C33;
+
+}
+
+
+
+
+/* 
+this is events page from here  */
+.for-space{
+    max-width: 1088px;
+    width:100%;
+    margin: 0 auto;
+}
+.for-space-title{
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #FFFBEE; 
+    margin-bottom: 50px; 
+}
+/* animation for for space title? */
+.for-space-img{
+    max-width: 1088px;
+    width: 100%;
+}
+.page-title{
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+    font-family: 'poppins';
+    font-size: 30px;
+    font-weight: 700;
+    color: #163460;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.space-block{
+    max-width: 1088px;
+    width: 100%;
+    position: relative;
+    transition-property: all;
+    transition-delay: 0.4s;
+    transition-duration: 0.6s;
+    margin-bottom: 80px;
+}
+.for-space-block{
+    background-color: #ffeefe75;
+    height: 220px;
+    position: absolute;
+    z-index: 5;
+    bottom: 1px;
+    display: none;
+    transition-property: all;
+    transition-delay: 0.4s;
+    transition-duration: 0.6s;
+   
+}
+.space-block:hover .for-space-block{
+    display: block;
+}
+.space-block-title{
+    margin: 10px 0 20px 30px;
+    font-family: 'butler';
+    font-size: 28px;
+    font-weight: bolder;
+    color: #163460;
+}
+.space-details{
+    margin: 5px 0 10px 30px;
+    font-family: 'exothin';
+    font-size: 22px;
+    font-weight: 600;
+    color: #021C33;
+}
+
+
+/* this is the end of space page */
+
+
+
+
+/* here starts is About us  */
+.main-container{
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-us-container{
+    background-image: url(../images/event4.jpg);
+    max-width: 1088px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;  
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.for-about-us{
+    width: 700px;
+    height: 400px;
+    background-color: #fffbee9c;
+}
+.for-about-title{
+    font-family: 'poppins';
+    font-size: 70px;
+    font-weight: 600;
+    color: #707070;
+    margin-left: 30px;
+}
+.title-two{
+    font-family: 'poppins';
+    font-size: 40px;
+    font-weight: 500;
+    color: #707070;
+    margin: 30px 0 0 30px;
+}
+.for-about-text{
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: 600;
+    color: #555454;
+    margin: 30px 0 0 30px;
+}
+.story-box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.story-main-title{
+    font-family: 'butler';
+    font-size: 34px;
+    font-weight: 500;
+    color: #163460;
+    margin: 20px 0 30px 0;
+}
+.story-title{
+    font-family: 'butler';
+    font-size: 27px;
+    color:#707070b2;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.story-text{
+    font-family: 'muktaregular';
+    font-size: 23px;
+    color:#707070;
+    margin-bottom: 15px;
+
+}
+.team-box{
+    max-width: 1088px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #163460;
+    color: #FFFBEE;
+    font-family: 'poppins';
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+}
+.employee-one{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.employee-img{
+    width: 352px;
+}
+.info-employee{
+    width: 352px;
+    height: 420px;
+    background-color: #707070b2;
+}
+.employee-detail{
+    font-family: 'poppins';
+    font-size: 17px;
+    color: #FFFBEE;
+    margin: 10px 0 10px 40px;
+}
+
+
+/* this is the end of about us */
+
+
 
 
 
