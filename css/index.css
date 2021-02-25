@@ -10,7 +10,7 @@
 .logo-img{
     width: 200px;
 }
-ul{
+.og-navbar{
     display: flex;
 }
 .navbar{
@@ -22,9 +22,7 @@ ul{
     font-weight: 500;
     font-size: 20px;
     color: #021C33;
-    transition-property: all;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
+    transition-property: all 0.3s linear 0.3s;
 }
 .navbar-li-1 a{
     margin-left: 50px;
@@ -33,18 +31,48 @@ ul{
     font-size: 20px;
     color: #021C33;
     text-decoration: underline;
-    transition-property: all;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
+    transition: all 0.3s linear 0.3s;
 }
 .navbar-li-1 a:hover{
     color: #32558c;
-    font-size: 21px;
 }
 
 .navbar-li a:hover{
     color: #32558c;
-    font-size: 21px;
+}
+.burger-icon{
+    display: none;
+}
+.burger-icon span{
+    display: block;
+    height: 4px;
+    width: 35px;
+    border-radius: 15px;
+    background-color: #021C33;
+    margin: 0 0 7px 0;
+}
+.for-mobile-nav{
+    opacity: 0;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    right: 0px;
+    background-color: #fffbeee5;
+    border-radius: 30px;
+    z-index: 15;
+}
+.nav-li{
+    display:block;
+    font-family: 'poppins';
+    font-size: 30px;
+    margin: 10px 0 20px 35px;
+}
+.nav-li a{
+    color: #021C33;
+}
+.burger-icon:hover .for-mobile-nav{
+    opacity: 1 ;
+
 }
 .banner-conatainer{
     max-width: 1088px;
@@ -92,6 +120,11 @@ ul{
     font-family: 'muktaregular';
     font-size: 21px;
     color: #FFFBEE;
+    transition-property: all 0.4s linear 0.5s;
+}
+.about-button:hover{
+    background-color: #8872AD;
+    margin-left: 20px;
 }
 .button-text{
     display: flex;
@@ -223,6 +256,11 @@ ul{
     font-family: 'muktaregular';
     font-size: 21px;
     color: #FFFBEE;
+    transition: all 0.4s linear 0.5s;
+}
+.space-button:hover{
+    background-color: #8872AD;
+    margin-right: 10px;
 }
 .for-button{
     max-width: 1088px;
@@ -299,11 +337,11 @@ ul{
     margin-top: 60px;
 }
 .mail-title{
- margin: 30px 0 0 30px;
- font-family: 'muktaregular';
- font-weight: bold;
- font-size: 33px;
- color: #707070;
+    margin: 30px 0 0 30px;
+    font-family: 'muktaregular';
+    font-weight: bold;
+    font-size: 33px;
+    color: #707070;
 }
 .mail-text{
     margin:40px 0 0 30px;
@@ -333,6 +371,10 @@ button{
 }
 input:focus,button:focus{
     outline: none;
+}
+.mail-img{
+    max-width: 500px;
+    width: 100%;
 }
 .last-container{
     max-width: 1420px;
@@ -375,15 +417,11 @@ input:focus,button:focus{
 .contact::before{
     content: "";
     display:block;
-    width: 820px;
+    max-width: 800px;
+    width: 100%;
     height: 1px;
     background-color: #021C33;
-
 }
-
-
-
-
 /* 
 this is events page from here  */
 .for-space{
@@ -399,7 +437,6 @@ this is events page from here  */
     background-color: #FFFBEE; 
     margin-bottom: 50px; 
 }
-/* animation for for space title? */
 .for-space-img{
     max-width: 1088px;
     width: 100%;
@@ -419,22 +456,16 @@ this is events page from here  */
     max-width: 1088px;
     width: 100%;
     position: relative;
-    transition-property: all;
-    transition-delay: 0.4s;
-    transition-duration: 0.6s;
     margin-bottom: 80px;
+    transition: all 0.4 0.6 linear;
 }
 .for-space-block{
     background-color: #ffeefe75;
-    height: 220px;
+    height: 230px;
     position: absolute;
     z-index: 5;
-    bottom: 1px;
+    bottom: 5px;
     display: none;
-    transition-property: all;
-    transition-delay: 0.4s;
-    transition-duration: 0.6s;
-   
 }
 .space-block:hover .for-space-block{
     display: block;
@@ -453,12 +484,7 @@ this is events page from here  */
     font-weight: 600;
     color: #021C33;
 }
-
-
 /* this is the end of space page */
-
-
-
 
 /* here starts is About us  */
 .main-container{
@@ -466,7 +492,6 @@ this is events page from here  */
     width: 100%;
     margin: 0 auto;
 }
-
 .about-us-container{
     background-image: url(../images/event4.jpg);
     border-radius: 10px;
@@ -531,7 +556,6 @@ this is events page from here  */
     font-size: 23px;
     color:#707070;
     margin-bottom: 15px;
-
 }
 .team-box{
     max-width: 1088px;
@@ -552,12 +576,14 @@ this is events page from here  */
     flex-wrap: wrap;
 }
 .employee-img{
-    width: 352px;
+    max-width: 352px;
+    width: 100%;
 }
 .info-employee{
     width: 352px;
     height: 420px;
     background-color: #707070b2;
+    margin-top: 10px;
 }
 .employee-detail{
     font-family: 'poppins';
@@ -565,12 +591,9 @@ this is events page from here  */
     color: #FFFBEE;
     margin: 10px 0 10px 40px;
 }
-
-
 /* this is the end of about us */
 
-
-/* here srtart cotnact */ 
+/* here start cotnact */ 
 .for-contact-container{
     max-width: 1088px;
     width: 100%;
@@ -629,14 +652,12 @@ this is events page from here  */
     margin: 10px 0 10px 60px;
 
 }
-
-
-@media (max-width:1024px) {
+@media (max-width:1100px) {
     .container{
         max-width: 870px;
     }
     .logo-img{
-        max-width: 150px;
+        max-width: 170px;
     }
     .banner-conatainer{
         max-width: 870px;
@@ -655,7 +676,7 @@ this is events page from here  */
         max-width: 870px;
     }
     .box1{
-        max-width: 280px;
+        width: 280px;
         height: 230px;
     }
     .box-title{
@@ -670,11 +691,11 @@ this is events page from here  */
         font-weight: 700;
     }
     .box2{
-        max-width: 280px;
+        width: 280px;
         height: 230px;
     }
     .box3{
-        max-width: 280px;
+        width: 280px;
         height: 230px;
     }
     .space-container{
@@ -767,10 +788,265 @@ this is events page from here  */
         font-size: 18px;
     }
     .contact{
-        max-width: 845px;   
+        max-width: 800px;   
+        margin-left: 100px;
+    } 
+    .contact::before{
+        max-width: 600px;
     }
-    
-
-    
-   
+    .story-box{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .info-employee{
+        width: 330px;
+        height: 420px;
+        background-color: #707070b2;
+        margin-top: 10px;
+    }  
 }   
+@media (max-width:768px) {
+    .burger-icon{
+        display: block;
+    }
+    .container{
+        padding: 8px;
+    }
+    nav{
+        display: none;
+    }
+    .logo-img{
+        max-width: 200px;
+    }
+    .banner-conatainer{
+        max-width: 768px;
+        background-image: url(../images/test.jpg);
+    }
+    .image-box{
+        display: none;
+    }
+    .banner-info{
+        background-color: none;
+        padding-top: 30px;
+    }
+    .about-button{
+        margin-bottom: 20px;
+    }
+    .box1{
+        width: 250px;
+    }
+    .box-title{
+        font-family: 'butlerregular';
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .box-text{
+        width: 230px;
+        margin: 25px 0px 0px 15px;
+        font-size: 20px;
+    }
+    .box2{
+        width: 250px;
+    }
+    .box3{
+        width: 250px;
+    }
+    .mail-img{
+        display: none;
+    }
+    .space-container{
+        max-width: 768px;
+    }
+    .space-box{
+        max-width: 768px;
+        flex-wrap: wrap;
+    }
+    .space-button{
+        margin-right: 20px;
+    }
+    .for-button{
+        max-width: 768px;
+    }
+    .space-description{
+        display: none;
+    }
+    .space-description2{
+        display: none;
+    }
+    .event-description{
+        display: none;
+    }
+    .event-description2{
+        display: none;
+    }
+    .event-box3{
+        margin-top: 20px;
+    }
+    .event-img2{
+        max-width: 536px;
+    }
+    .event-description3{
+       display: none;
+    }
+    .contact{
+        margin-left: 0;
+        padding-left: 30px;
+    }
+    .for-space-block{
+        height: 240px;
+    }
+    .space-details{
+        font-size: 20px;
+    }
+    .info-employee{
+        width: 250px;
+    }
+    .story-box{
+        width: 700px;
+    }
+}
+@media (max-width:550px){
+    .box3{
+        display: none;
+    }
+    .space-block-title{
+        font-size: 25px;
+        margin: 5px 0 10px 10px;
+    }
+    .space-details{
+        font-size: 18px;
+        margin: 5px 0 5px 5px;
+    }
+    .about-info{
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        margin-top: 10px;
+    }
+    .box-content{
+        margin-bottom: 15px;
+    }
+    .socials{
+        margin: 50px 0 30px 40px;
+    }
+    .icon{
+        margin: 10px 10px 0 0;
+    }
+    .contact{
+       padding-left: 50px; 
+    }
+    .story-box{
+        width: 500px;
+    }
+    .info-employee{
+        width: 300px;
+    }
+    .employee-one{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-information {
+        max-width: 400px;
+        background-color: #fffbeed8;
+    }
+    .email-adress-phone{
+        margin: 10px;
+    }
+    .mail-text{
+        width: 200px;
+    }
+    button{
+        margin: 30px
+    }
+}
+@media (max-width:420px){
+    .square-container{
+        flex-wrap: wrap;
+    }
+    .box2, .box1{
+        width: 352px;
+        margin: 10px 0 0 30px;
+    }
+    .space-block-title{
+        font-size: 18px;
+        margin: 5px 0 5px 5px;
+    }
+    .space-details{
+        font-size: 15px;
+    }
+    .for-space-block{
+        height: 190px;
+    }
+    .story-box{
+        width: 300px;
+    }
+    .for-about-us{
+        height: 200px;
+    }
+    .for-about-title{
+        font-size: 40px;
+    }
+    .title-two{
+        font-size: 25px;
+    }
+    .for-about-text{
+        font-size: 18px;
+    }
+    .contact-title{
+        font-size: 40px;
+        text-align: center;
+    }
+
+}
+@media (max-width:375px){
+    .box2, .box1{
+        width: 352px;
+        margin: 10px 0 0 10px;
+    }
+    .space-block-title{
+        font-size: 17px;
+    }
+    .space-details{
+        font-size: 14px;
+    }
+    .for-space-block{
+        height: 170px;
+    }
+    .for-about-us{
+        height: 300px;
+    }
+    .box-content{
+        font-size: 16px;
+    }
+    .about-box{
+        padding-left: 20px;
+    }
+
+}
+@media (max-width:320px){
+    .box2, .box1{
+        width: 320px;
+        margin: 10px 0 0 0px;
+    }
+    .space-block-title{
+        font-size: 17px;
+    }
+    .space-details{
+        font-size: 13px;
+    }
+    .for-space-block{
+        height: 150px;
+    }
+    .flex-column{
+        width: 300px;
+    }
+    .form-input{
+        width: 200px;
+    }
+
+}
+
+
