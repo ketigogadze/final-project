@@ -988,10 +988,11 @@ this is events page from here  */
 @media (max-width:420px){
     .square-container{
         flex-wrap: wrap;
+        padding:20px;
     }
     .box2, .box1{
         width: 352px;
-        margin: 10px 0 0 30px;
+        margin: 10px 0 0 10px;
     }
     .space-block-title{
         font-size: 18px;
@@ -1001,7 +1002,7 @@ this is events page from here  */
         font-size: 15px;
     }
     .for-space-block{
-        height: 190px;
+        height: 160px;
     }
     .story-box{
         width: 300px;
@@ -1022,21 +1023,24 @@ this is events page from here  */
         font-size: 40px;
         text-align: center;
     }
+    .for-contact-info{
+        height: 710px;
+    }
+    .contact-information{
+        top: 454px;
+    }
 
 }
 @media (max-width:375px){
     .box2, .box1{
         width: 352px;
-        margin: 10px 0 0 10px;
+        margin: 10px 0 0 0px;
     }
     .space-block-title{
         font-size: 17px;
     }
     .space-details{
         font-size: 14px;
-    }
-    .for-space-block{
-        height: 170px;
     }
     .for-about-us{
         height: 300px;
