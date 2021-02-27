@@ -390,7 +390,7 @@ input:focus,button:focus{
     outline: none;
 }
 .mail-img{
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
 }
 .last-container{
