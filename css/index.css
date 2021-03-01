@@ -155,13 +155,13 @@
     font-family: 'muktaregular';
     font-size: 21px;
     color: #FFFBEE;
-    -webkit-transition-property: all 0.4s linear 0.5s;
-    -o-transition-property: all 0.4s linear 0.5s;
-    transition-property: all 0.4s linear 0.5s;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 .about-button:hover{
     background-color: #8872AD;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .button-text{
     display: -webkit-box;
@@ -354,13 +354,13 @@
     font-family: 'muktaregular';
     font-size: 21px;
     color: #FFFBEE;
-    -webkit-transition: all 0.4s linear 0.5s;
-    -o-transition: all 0.4s linear 0.5s;
-    transition: all 0.4s linear 0.5s;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 .space-button:hover{
     background-color: #8872AD;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .for-button{
     max-width: 1088px;
@@ -577,9 +577,9 @@ this is events page from here  */
     width: 100%;
     position: relative;
     margin-bottom: 80px;
-    -webkit-transition: all 0.4 0.6 linear;
-    -o-transition: all 0.4 0.6 linear;
-    transition: all 0.4 0.6 linear;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 .for-space-block{
     background-color: #ffeefe75;
