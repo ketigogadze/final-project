@@ -25,7 +25,7 @@
     max-width: 1088px;
 }
 .navbar-li a{
-    margin-left: 50px;
+    margin-left: 30px;
     font-family: 'poppinsbold';
     font-weight: 500;
     font-size: 20px;
@@ -35,7 +35,7 @@
     transition-property: all 0.3s linear 0.3s;
 }
 .navbar-li-1 a{
-    margin-left: 50px;
+    margin-left: 20px;
     font-family: 'poppinsbold';
     font-weight: 500;
     font-size: 20px;
@@ -501,18 +501,22 @@ input:focus,button:focus{
     margin-top: 60px;
 }
 .about-info{
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-between;
+    
 }
 .about {
     font-family: 'butlerregular';
     font-size: 22px;
     font-weight: 700;
     color:#021C33;
-    margin:15px 0 15px 0;
+    margin:15px 0 15px 0px;
+
 }
 .about a{
     color: #021C33;
@@ -524,7 +528,7 @@ input:focus,button:focus{
     margin-bottom: 10px;
 }
 .socials{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .icon{
     margin: 10px 10px 0 0;
@@ -532,7 +536,7 @@ input:focus,button:focus{
 .contact{
     max-width: 1088px;
     width: 100%;
-    margin: 0 auto;   
+    padding-left: 10px;  
 }
 .contact::before{
     content: "";
@@ -816,6 +820,9 @@ this is events page from here  */
     .logo-img{
         max-width: 170px;
     }
+    .navbar-li a{
+        margin-left: 20px;
+    }
     .banner-conatainer{
         max-width: 870px;
         margin-top: 10px;
@@ -831,6 +838,9 @@ this is events page from here  */
     }
     .square-container{
         max-width: 870px;
+    }
+    .form-input{
+        width: 80%;
     }
     .box1{
         width: 280px;
@@ -943,12 +953,12 @@ this is events page from here  */
     }
     .contact{
         max-width: 800px;   
-        margin-left: 100px;
     } 
     .contact::before{
         max-width: 600px;
     }
     .story-box{
+        padding:0 15px 0 15px;
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
@@ -976,6 +986,7 @@ this is events page from here  */
     .banner-conatainer{
         max-width: 768px;
         background-image: url(../images/test.jpg);
+        background-position: cover;
     }
     .image-box{
         display: none;
@@ -1054,7 +1065,6 @@ this is events page from here  */
     }
     .contact{
         margin-left: 0;
-        padding-left: 30px;
     }
     .for-space-block{
         height: 240px;
@@ -1065,10 +1075,13 @@ this is events page from here  */
     .info-employee{
         width: 250px;
     }
-    .story-box{
-        width: 700px;
+}
+@media (max-width:760px){
+    .square-container{
+        flex-wrap: wrap;
     }
 }
+
 @media (max-width:550px){
     .box3{
         display: none;
@@ -1135,8 +1148,11 @@ this is events page from here  */
     button{
         margin: 30px
     }
+    .contact{
+        padding-left: 30px;
+    }
 }
-@media (max-width:420px){
+@media (max-width:520px){
     .square-container{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
